@@ -26,7 +26,10 @@ def main():
 
     statements = [
         # CREATE the messages table
-        "CREATE TABLE posts (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), maker STRING, title STRING, content STRING, hash STRING, post_date TIMESTAMP DEFAULT now(), reveal_date TIMESTAMP DEFAULT now())",
+        # "CREATE TABLE posts (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), maker STRING, title STRING, content STRING, hash STRING, post_date TIMESTAMP DEFAULT now(), reveal_date TIMESTAMP DEFAULT now())",
+        "CREATE TABLE post_access (id UUID, username STRING)",
+        #drop post_access table
+        #"DROP TABLE post_access",
         # INSERT a row into the messages table
         # "INSERT INTO messages2 (message, hash) VALUES ('{}', '{}')".format(word, m.hexdigest()),
         # "SELECT * FROM messages2"
